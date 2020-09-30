@@ -35,7 +35,7 @@ delete_scarse_AEs = function(dd.meddra.groups, dds, min_freq = 10) {
 ###############################
 pairs2reports = function(dds) {
   dds %>%
-    group_by(VAERS_ID) %>%
+    group_by(ID) %>%
     summarise(
       VAX_Set = paste0(unique(VAX_TYPE), collapse = ';'),
       AE_Set = paste0(unique(AE_NAME), collapse = ';')
@@ -50,8 +50,8 @@ reports2pairs = function(dds_reports) {
   dds_pairs_lst = lapply(1:nrow(dds_reports), function(i) {
     VAX_Set = dds_reports$VAX_Set[i]
     AE_Set = dds_reports$AE_Set[i]
-    VAERS_ID = dds_reports$VAERS_ID[i]
-    data = data.frame(VAERS_ID = VAERS_ID,
+    ID = dds_reports$ID[i]
+    data = data.frame(ID = ID,
                       expand.grid(
                         strsplit(VAX_Set, split = ';')[[1]],
                         strsplit(AE_Set, split = ';')[[1]],
@@ -71,7 +71,7 @@ make_table = function(dds,
                                         list(c('FLU3', 'FLU4'),
                                              'FLU'))) {
   dds %>%
-    group_by(VAERS_ID) %>%
+    group_by(ID) %>%
     mutate(wt = 1 / length(unique(VAX_TYPE))) %>%
     ungroup() ->
     dds

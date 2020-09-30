@@ -70,7 +70,7 @@ zinb_analysis_tool = function(grp_data,
 
   cl <- makePSOCKcluster(n_copies)
   registerDoParallel(cl)
-  packages = c("pscl", 'MASS', 'dplyr', 'questionr', 'MyPackage')
+  packages = c("pscl", 'MASS', 'dplyr', 'questionr', 'zGPS.AO')
   set.seed(seed)
   big_data_perm_lst = foreach(i = 1:n_perm,
                               .packages = packages) %dorng% {
