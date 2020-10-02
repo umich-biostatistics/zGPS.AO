@@ -43,5 +43,6 @@ plot_heatmap = function(big_data) {
       axis.text.y = element_text()
     ) ->
     p
+
   return(p)
 }
