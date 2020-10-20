@@ -48,6 +48,16 @@
 #'   \item{lambda_pval: }{The p value for lambda_hat (individual AE RR)}
 #' }
 #'
+#' @examples
+#' data(vaers_data)
+#' data("dd.meddra")
+#' data("merge_list")
+#' big_data = zinb_analysis_tool(dd.meddra[1:10000,],
+#'                               vaers_data[1:10000,],
+#'                               merge_list,
+#'                               n_perm = 2,
+#'                               n_copies = 2)
+#'
 #' @export
 
 

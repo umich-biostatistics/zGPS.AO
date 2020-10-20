@@ -1,14 +1,13 @@
 Package: zGPS.AO
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Zero Inflated Gamma Poisson Shrinker with Adverse Event Ontology
 Version: 0.1.0
 Authors@R: c(
     person(given = "Bangyao", family = "Zhao", role = c("aut"), email = "byzhao@umich.edu"),
     person(given = "Lili", family = "Zhao", role = c("aut"), email = "zhaolili@med.umich.edu"),
     person(given = "Michael", family = "Kleinsasser", role = c("aut", "cre"), email = "mkleinsa@umich.edu"))
-Maintainer: Bangyao Zhao <byzhao@umich.edu>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
+Maintainer: Mike Kleinsasser <mkleinsa@umich.edu>
+Description: Zero Inflated Gamma Poisson Shrinker with AE ontology.
 License: GPL-3
 Encoding: UTF-8
 LazyData: true

@@ -75,3 +75,14 @@ A big data.frame containing the following columns:
 \description{
 Perform ZINB analysis on real data.
 }
+\examples{
+data(vaers_data)
+data("dd.meddra")
+data("merge_list")
+big_data = zinb_analysis_tool(dd.meddra[1:10000,],
+                              vaers_data[1:10000,],
+                              merge_list,
+                              n_perm = 2,
+                              n_copies = 2)
+
+}

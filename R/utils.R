@@ -301,3 +301,6 @@ plotly_heatmap = function(big_data) {
 }
 ###############################
 ###############################
+utils::globalVariables(c("AE", "AE_NAME", "AE_grp", "E", "ID", "VAX_TYPE",
+                         "lambda_hat", "lambda_pval", "p", "p_val",
+                          "r", "s", "s_pval", "vaccine", "y", "y_fit"))
