@@ -7,7 +7,15 @@ Authors@R: c(
     person(given = "Lili", family = "Zhao", role = c("aut"), email = "zhaolili@med.umich.edu"),
     person(given = "Michael", family = "Kleinsasser", role = c("aut", "cre"), email = "mkleinsa@umich.edu"))
 Maintainer: Mike Kleinsasser <mkleinsa@umich.edu>
-Description: Zero Inflated Gamma Poisson Shrinker with AE ontology.
+Description: The method zGPS.AO (Zero Inflated Gamma Poisson Shrinker withAE ontology) 
+is based on the zero inflated negative binomial distribution. 
+This model has two purples:a regression model obtain group level estimation, 
+and a empirical bayes framework to evaluate AElevel risks. In this package, 
+we wrap up our method into an all-in-one function with detailed documentation for researchers to use. 
+To speed up, this function has a built-in parallelization feature to utilize multi-core modern computers. 
+We also have developed some functions to visualize the results. 
+"Data Mining in Large Frequency Tables With Ontology, with an Application to the Vaccine Adverse Event Reporting System" 
+Bangyao Zhao, Lili Zhao (2020) <arXiv:XXXX.XXXXX>.
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
