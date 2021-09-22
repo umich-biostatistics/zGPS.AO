@@ -7,12 +7,12 @@
 zGPS_bootstrap(zGPS_result, n_perm = 20, n_cores = round(detectCores()/2))
 }
 \arguments{
+\item{zGPS_result}{the zgps model result}
+
 \item{n_perm}{a positive integer that decide the number of bootstrap samples to determine
 the p value for observed RRs.}
 
-\item{n_copies}{a positive integer indicating the number of permutations can
-be done in parallel. This number is default to half of the computer's number
-of cores.}
+\item{n_cores}{number of cores}
 }
 \value{
 An object of S3 class zGPS.

@@ -13,6 +13,8 @@
 
 \item{AE_grp_name}{The AE group name to be visualized}
 
+\item{interactive_plot}{Interactive plots, default to false}
+
 \item{...}{more arguments}
 }
 \value{

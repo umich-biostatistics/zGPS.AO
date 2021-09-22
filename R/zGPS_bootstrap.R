@@ -1,10 +1,9 @@
 #' Perform bootstrap to evaluate accuracy of zGPS analysis.
 #'
+#' @param zGPS_result the zgps model result
 #' @param n_perm a positive integer that decide the number of bootstrap samples to determine
 #' the p value for observed RRs.
-#' @param n_copies a positive integer indicating the number of permutations can
-#' be done in parallel. This number is default to half of the computer's number
-#' of cores.
+#' @param n_cores number of cores
 #'
 #' @return An object of S3 class zGPS.
 #' It contain the bootstrap results and the calculated q values.

@@ -3,6 +3,7 @@
 #' @param x An object of class zGPS
 #' @param vaccine_name The vaccine type to be visualized
 #' @param AE_grp_name The AE group name to be visualized
+#' @param interactive_plot Interactive plots, default to false
 #' @param ... more arguments
 #'
 #' @return The plot of the model
